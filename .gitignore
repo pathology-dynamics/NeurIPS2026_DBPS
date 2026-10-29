@@ -1,0 +1,18 @@
+# Restricted data and everything derived from it.
+# Only the ROI list and the group-level connectomes are distributed.
+data/*
+!data/TauRegionList.csv
+!data/connectomes/
+outputs/
+results/
+tables/
+figures/
+splits/
+*.npz
+*.npy
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

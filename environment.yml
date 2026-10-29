@@ -1,0 +1,19 @@
+name: dbps
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - torch==2.5.1
+      - numpy==2.2.6
+      - scipy==1.15.3
+      - pandas==2.3.3
+      - pot==0.9.6.post1
+      - matplotlib==3.10.8
+      # Figure 2 (brain surfaces) only
+      - nilearn==0.13.1
+      - nibabel==5.4.2
+      - mne==1.12.1
