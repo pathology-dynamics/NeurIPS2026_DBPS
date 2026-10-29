@@ -22,7 +22,7 @@ ADNI and NACC data cannot be redistributed. Obtain them from [ADNI](https://adni
 - ADNI: `UCBERKELEY_TAU_6MM_27Oct2025.csv`, `DXSUM_27Oct2025.csv`, `ADNIMERGE_09Dec2025.csv`
 - NACC: `investigator_scan_taupetnpdka_nacc72.csv`, `investigator_nacc72.csv`
 
-The repository includes the two non-restricted inputs: `data/TauRegionList.csv` (the 84 regions of interest) and `data/connectomes/*.csv` (five group-level 84×84 connectomes, averaged into the graph Laplacian).
+The repository includes the two non-restricted inputs: `data/TauRegionList.csv` (the 84 regions of interest) and `data/connectomes/*.csv` (five group-level 84×84 connectomes, averaged into the graph Laplacian). Both are taken unchanged from [multimodal_ndm](https://github.com/ethompson93/multimodal_ndm) ([Thompson et al., 2024](https://doi.org/10.1162/imag_a_00089)); the connectomes are derived from the MICA-MICs dataset ([Royer et al., 2022](https://doi.org/10.1038/s41597-022-01682-y)). Please cite both works if you use these files.
 
 ```bash
 python -m scripts.prepare_adni_csv --raw_dir <ADNI files> --out_dir data
@@ -174,4 +174,4 @@ scripts/      data preparation, evaluation drivers, tables and figures
 
 ## License
 
-Code released under the [MIT License](LICENSE). The ADNI and NACC data remain subject to their own data use agreements.
+Code released under the [MIT License](LICENSE). The files in `data/` are third-party data and are not covered by this license. The ADNI and NACC data remain subject to their own data use agreements.
